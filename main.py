@@ -106,6 +106,36 @@ while count:
         elm.send_keys(s)
         elm = wait.until(EC.presence_of_element_located((By.XPATH, "//button[text()=' Continue ']")))
         elm.click()
+    for x in range(random.randint(1, 4)):
+        driver.find_element_by_xpath("(//a[@class='text-white'])[2]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("(//a[@class='text-white'])[3]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("//a[@href='http://52.211.207.33/order/order-personalinfo']").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("//a[@href='http://52.211.207.33/order/order-grant']").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[6]/a[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("//i[@class='fas fa-edit']").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("(//i[@class='fas fa-edit'])[2]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("(//i[@class='fas fa-edit'])[3]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath(
+            "html[1]/body[1]/div[3]/section[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]/i[1]").click()
+        time.sleep(0.15)
+        driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
+        time.sleep(0.15)
     driver.find_element_by_xpath("//button[@class='btn mb-3']//i[1]").click()
     elm = wait.until(EC.presence_of_element_located(
         (By.XPATH, "/html/body/section/div[2]/form/div[1]/div/div[2]/div/div/div[2]/input")))
@@ -121,42 +151,3 @@ while count:
     count = count + 1
     driver.quit()
 
-
-
-
-
-
-
-
-"""
-    for x in range(random.randint(5, 10)):
-            driver.find_element_by_xpath("(//a[@class='text-white'])[2]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("(//a[@class='text-white'])[3]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("//a[@href='http://52.211.207.33/order/order-personalinfo']").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("//a[@href='http://52.211.207.33/order/order-grant']").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[6]/a[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("//i[@class='fas fa-edit']").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("(//i[@class='fas fa-edit'])[2]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("(//i[@class='fas fa-edit'])[3]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/section[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]/i[1]").click()
-            time.sleep(0.15)
-            driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-            time.sleep(0.15)
-    
-"""
