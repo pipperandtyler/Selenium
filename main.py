@@ -148,6 +148,14 @@ while count:
         "/html/body/section/div[2]/form/div[1]/div/div[2]/div/div/div[4]/div/div[1]/input").send_keys("452")
     driver.find_element_by_xpath("//button[text()[normalize-space()='Make Payment']]").click()
     time.sleep(0.20)
+    driver.find_element_by_xpath("//a[@class='navbar-brand font-weight-bold']//img[1]").click()
+    driver.find_element_by_xpath("//a[@class='nav-link dropdown-toggle']").click()
+    driver.find_element_by_xpath("//a[@class='dropdown-item ']").click()
+    time.sleep(0.1)
+    driver.find_element_by_xpath("//a[@class='nav-link dropdown-toggle']").click()
+    driver.find_element_by_xpath("(//a[@class='dropdown-item '])[2]").click()
+    time.sleep(0.1)
+    driver.find_element_by_xpath("//a[@class='nav-link ']")
+    time.sleep(0.1)
     count = count + 1
     driver.quit()
-
