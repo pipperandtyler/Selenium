@@ -135,7 +135,7 @@ while count:
             "html[1]/body[1]/div[3]/section[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]/i[1]").click()
         time.sleep(0.15)
         driver.find_element_by_xpath("html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/ol[1]/li[7]/a[1]").click()
-        time.sleep(0.15)
+        time.sleep(0.11)
     driver.find_element_by_xpath("//button[@class='btn mb-3']//i[1]").click()
     elm = wait.until(EC.presence_of_element_located(
         (By.XPATH, "/html/body/section/div[2]/form/div[1]/div/div[2]/div/div/div[2]/input")))
