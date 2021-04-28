@@ -25,7 +25,10 @@ while count:
     driver = webdriver.Chrome('C:\chromedriver')
     driver.maximize_window()
     driver.get("http://52.211.207.33/")
-    driver.find_element_by_xpath('/html/body/header/div/nav/div/ul/li[5]/button').click()
+    if count % 2 == 0:
+        driver.find_element_by_xpath("//button[text()='Get Started Now!']").click()
+    else:
+        driver.find_element_by_xpath("//button[text()='Start your journey']").click()
     opt = random.randint(2, 40)
     opt = str(opt)
     driver.find_element_by_xpath("//option[" + opt + "]").click()
@@ -103,7 +106,7 @@ while count:
         elm.send_keys(s)
         elm = wait.until(EC.presence_of_element_located((By.XPATH, "//button[text()=' Continue ']")))
         elm.click()
-    driver.find_element_by_xpath("//button[text()=' Payment ']").click()
+    driver.find_element_by_xpath("//button[@class='btn mb-3']//i[1]").click()
     elm = wait.until(EC.presence_of_element_located(
         (By.XPATH, "/html/body/section/div[2]/form/div[1]/div/div[2]/div/div/div[2]/input")))
     elm.send_keys("4976000000003436")
